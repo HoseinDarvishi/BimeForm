@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/vazir.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+  <title>bime Sadra</title>
+</head>
+
+<body>
+  <div class="all pt-4">
+    <div class="form-container bg-white rounded-3 overflow-hidden shadow-lg mt-2">
+      <h5 class="head-text text-center bg-info py-3 text-white">محاسبه آنلاین قیمت بیمه خودرو</h5>
+      <form id="form">
+        <div class="px-5 my-3">
+          <label class="form-label text-muted mb-2">نوع خودرو :</label>
+          <select class="form-control form-select border-0 border-bottom rounded-0" id="carName">
+            <option value=""> - انتخاب کنید -</option>
+            <option value="pride">پراید</option>
+            <option value="peugeut">پژو</option>
+            <option value="rana">رانا</option>
+          </select>
+        </div>
+        <div class="px-5 my-3">
+          <label class="form-label text-muted mb-2"> سال ساخت :</label>
+          <select class="form-control form-select border-0 border-bottom rounded-0" id="yearBuild">
+            <option value=""> - انتخاب کنید -</option>
+          </select>
+        </div>
+        <div class="my-4 px-5">
+          <label class="form-label text-muted">نوع بیمه : </label>
+          <div class="d-flex justify-content-between align-items-center">
+            <label for="sales">بیمه شخص ثالث</label>
+            <input class="my-2" id="sales" type="radio" name="typeBime" checked>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <label for="badane">بیمه بدنه </label>
+            <input class="" id="badane" type="radio" name="typeBime">
+          </div>
+        </div>
+
+        <div class="p-5">
+          <input class="btn btn-info form-control shadow text-light" type="submit" value="محاسبه قیمت">
+        </div>
+
+      </form>
+      <div class="mx-auto text-center spinner">
+        <img class="w-100" src="spinner.gif" alt="درحال محاسبه قیمت ...">
+      </div>
+      <div class="text-center px-5 factor">
+        <div class="border border-info mb-3 mt-1 rounded-3 overflow-hidden shadow">
+          <h6 class="bg-info py-2 text-white">خلاصه فاکتور</h6>
+          <p>مدل : <span class="model"></span></p>
+          <p>نوع بیمه : <span class="type"></span></p>
+          <p> قیمت نهایی : <span class="price">2500000</span></p>
+          <div class="px-5 pb-2">
+            <button class="btn shadow-sm btn-success w-100">تایید نهایی</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

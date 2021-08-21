@@ -1,0 +1,36 @@
+html{
+  direction: rtl;
+}
+*{
+  font-family: Vazir;
+}
+.all{
+  min-height: 100vh;
+  background:linear-gradient(to right bottom , rgb(255, 166, 0) , rgb(223, 103, 123)) ;
+}
+.form-container{
+  max-width: 900px;
+  margin: auto auto;
+}
+input,select {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.boxError{
+  border: 1px solid rgb(182, 43, 43);
+  background-color: rgba(248, 0, 0, 0.13);
+  color: black;
+  padding: 10px;
+  text-align: center;
+  margin: 40px auto;
+  width: 80%;
+  border-radius: 5px;
+  font-weight: 900;
+}
+.spinner{
+  display: none;
+  max-width: 500px;
+}
+.factor{
+  display: none;
+}
